@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    background-image: url("imagens/tela de fundo.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.logo-beauty-hub {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo-beauty-hub img {
+    width: 140px;
+}
+
+.senac-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.senac-logo img {
+    width: 110px;
+}
+
+.login-container {
+    background-color: transparent;  
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-container label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    font-size: 14px;
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #ff5733;
+}
