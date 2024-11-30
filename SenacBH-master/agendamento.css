@@ -1,0 +1,89 @@
+/* Estilo para o Header */
+.header {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+  background-image: url('imagens/BackGround Senac Beauty Hub (branco e maior) 1.png');
+  height: 130px;
+}
+
+.header img {
+  max-height: 90px;
+}
+
+/* Sidebar */
+.custom-sidebar {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #014A8E; /* Cor atualizada da barra lateral */
+  color: white;
+}
+
+.custom-sidebar a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+  font-size: 16px;
+}
+
+.custom-sidebar a:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+/* Calendário */
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar td, .calendar th {
+  width: 120px; /* Aumentando a largura */
+  height: 120px; /* Aumentando a altura */
+  vertical-align: top; /* Alinhando o texto no topo */
+  padding: 10px; /* Adicionando preenchimento */
+}
+
+.calendar td {
+  position: relative;
+}
+
+.calendar td::before {
+  content: attr(data-day);
+  position: absolute;
+  top: 5px;
+  right: 5px; /* Mudança para parte superior direita */
+  font-weight: bold;
+}
+
+.calendar .active-day {
+  background-color: #d1e7dd;
+}
+
+.calendar .highlighted-day {
+  background-color: #b3e5fc; /* Azul claro */
+  color: #014A8E; /* Azul escuro */
+}
+
+.calendar .highlighted-day small {
+  display: block; /* Certificar que o texto fique abaixo */
+  margin-top: 20px; /* Aumentar a separação */
+}
+
+.calendar small {
+  font-size: 0.8rem;
+  color: #014A8E;
+}
+
+/* Título e Subtítulo */
+.main-title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: left;
+  color: #014A8E; /* Azul claro */
+  margin-bottom: 20px;
+}

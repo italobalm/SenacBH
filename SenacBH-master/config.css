@@ -1,0 +1,76 @@
+/* Estilo para o Header */
+.header {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    background-image: url('img/fundo-header.png');
+    height: 130px;
+  }
+  
+  .header img {
+    max-height: 90px;
+  }
+  
+  /* Sidebar */
+  .custom-sidebar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #014A8E; 
+    color: white;
+  }
+  
+  .custom-sidebar a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .custom-sidebar a:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+  }
+  
+  /* Conteúdo Principal */
+  .main-title {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: left;
+    color: #014A8E; /* Azul claro */
+    margin-bottom: 20px;
+  }
+  
+  .list-group-item {
+    background-color: #f8f9fa; /* Fundo cinza */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 10px 15px;
+    
+  }
+  
+  .option-item {
+    flex-grow: 1;
+  }
+  
+  .btn-alterar {
+    background-color: #014A8E;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  
+  .btn-alterar:hover {
+    background-color: #0056b3;
+  }
+  
+  .ml-3 {
+    margin-left: 15px; /* Espaçamento à esquerda para o botão "Alterar" */
+  }
+  
+  .body{
+    background-image: url('img/BackGround\ Senac\ Beauty\ Hub\ \(branco\ e\ maior\)\ 2.png')
+  }

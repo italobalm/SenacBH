@@ -1,0 +1,67 @@
+/* Estilo para o Header */
+.header {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    background-image: url('imagens/BackGround Senac Beauty Hub (branco e maior) 1.png');
+    height: 130px;
+  }
+  
+  .header img {
+    max-height: 90px;
+  }
+  
+  
+  .custom-sidebar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #014A8E; 
+    color: white;
+  }
+  
+  .custom-sidebar a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .custom-sidebar a:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+  }
+  
+
+  .main-title {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: left;
+    color: #014A8E; 
+    margin-bottom: 20px;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe6f2; 
+    border-radius: 15px; 
+    margin-bottom: 10px; 
+  }
+  
+  .list-group-item h5 {
+    margin-bottom: 0;
+  }
+  
+  .list-group-item small {
+    color: #014A8E; 
+  }
+  
+  .list-group-item .fa-user-circle {
+    color: #014A8E; 
+  }
+  

@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Background */
+  .bg-custom {
+    background-image: url('img/BackGround Senac Beauty Hub (branco e maior) 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header-custom {
+    height: 150px; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo {
+    max-width: 110px;
+  }
+  
+  /* Títulos */
+  .text-orange {
+    color: black;
+  }
+  
+  .subtitle {
+    color: #014A8E;
+    font-weight: bold;
+  }
+  
+ 
+  .title-container {
+    margin-top: 70px; 
+    margin-bottom: 40px; 
+    text-align: left; 
+    padding-left: -30px; 
+  }
+  
+  /* Botões */
+  .btn-custom {
+    background-color: #e0a97e;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    width: 220px; 
+    height: 35px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+  }
+  
+
+  .btn-custom:hover {
+    background-color: #d18962;
+  }
+  
+  
+  .text-box p {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: black; 
+    text-align: left;
+    line-height: 1.2; 
+    background-color: rgba(252, 249, 247, 0.5); 
+    border-radius: 25px; 
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    height: 35px;
+  }
+  
+  
+  .btn-custom-back {
+    background-color: #e0a97e;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+  
+  .btn-custom-back:hover {
+    background-color: #d18962;
+  }
+  
+  
+  .row div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+  }
