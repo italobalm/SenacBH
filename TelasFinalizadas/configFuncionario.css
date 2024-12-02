@@ -1,0 +1,119 @@
+/* Estilo para o Header */
+.header {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    background-image: url('img/fundo-header.png');
+    background-size: 1200px;
+    height: 130px;
+  }
+  
+  .header img {
+    max-height: 60px;
+  }
+  
+  /* Sidebar */
+  .custom-sidebar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #014A8E; 
+    color: white;
+  }
+  
+  .custom-sidebar a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .custom-sidebar a:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+  }
+  
+  /* Conteúdo Principal */
+  .main-title {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: left;
+    color: #014A8E; /* Azul claro */
+    opacity: 60%;
+    margin-bottom: 20px;
+  }
+  
+  .list-group-item {
+    background-color: #f8f9fa; /* Fundo cinza */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 10px 15px;
+    
+  }
+  
+  .option-item {
+    flex-grow: 1;
+  }
+  
+  .btn-alterar {
+    background-color: #014A8E;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  
+  .btn-alterar:hover {
+    background-color: #0056b3;
+  }
+  
+  .ml-3 {
+    margin-left: 15px; /* Espaçamento à esquerda para o botão "Alterar" */
+  }
+  
+  .option-item{
+    font-size: 12px !important;
+  }
+
+  /* Estilo da foto de perfil */
+.profile-pic {
+  width: 40px; /* Tamanho da foto */
+  height: 40px; /* Altura igual à largura para ser redonda */
+  border-radius: 50%; /* Torna a imagem redonda */
+  object-fit: cover; /* Ajusta a imagem dentro do contêiner */
+  border: 2px solid white; /* Borda para destacar a foto */
+}
+
+
+.profile-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic-large {
+  width: 100px; /* Tamanho maior */
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--AzulSecundario);
+}
+
+#profilePhotoInput {
+  display: none; /* Oculta o input de arquivo */
+}
+
+.btn-alterar {
+  background-color: var(--AzulSecundario);
+  color: var(--branco);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-alterar:hover {
+  background-color: var(--AzulPrincipal);
+}

@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Background */
+  .bg-custom {
+    background-image: url('img/fundo-header.png');
+    background-size: 1200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header-custom {
+    height: 150px; /* Ajuste a altura conforme necessário */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo {
+    max-width: 110px;
+  }
+  
+  /* Títulos */
+  .text-orange {
+    color: black;
+  }
+  
+  .subtitle {
+    color: #014A8E;
+    font-weight: bold;
+  }
+  
+  /* Custom title position */
+  .title-container {
+    margin-top: 70px; /* Ajuste a posição conforme necessário */
+    margin-bottom: 40px; /* Adicionado margem inferior para espaçamento */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding-left: -30px; /* Ajuste o espaçamento da esquerda conforme necessário */
+  }
+  
+  /* Botões */
+  .btn-custom {
+    background-color: #e0a97e;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    width: 220px; /* Tamanho fixo para todos os botões */
+    height: 35px; /* Altura fixa para consistência */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centraliza o botão no container */
+  }
+  
+  /* Botão Hover */
+  .btn-custom:hover {
+    background-color: #d18962;
+  }
+  
+  /* Texto abaixo dos botões */
+  .text-box p {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: black; /* Cor do texto alterada para preto */
+    text-align: left; /* Garante que o texto abaixo esteja centralizado */
+    line-height: 1.2; /* Ajusta o espaçamento vertical para melhor alinhamento */
+    background-color: rgba(252, 249, 247, 0.5); /* Cor semelhante ao botão laranja com transparência */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra semelhante aos botões */
+    width: 320px;
+    height: 35px;
+  }
+  
+  /* Botão "Voltar" */
+  .btn-custom-back {
+    background-color: #e0a97e;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+  
+  .btn-custom-back:hover {
+    background-color: #d18962;
+  }
+  
+  /* Layout Responsivo */
+  .row div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Garante alinhamento vertical */
+    justify-content: center;
+  }
+  
