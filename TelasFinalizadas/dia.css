@@ -1,0 +1,160 @@
+/* Estilo para o Header */
+.header {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    background-image: url('imagens/BackGround Senac Beauty Hub (branco e maior) 1.png');
+    height: 130px;
+}
+
+.header img {
+    max-height: 90px;
+}
+
+/* Sidebar */
+.custom-sidebar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #014A8E; /* Cor atualizada da barra lateral */
+    color: white;
+}
+
+.custom-sidebar a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+}
+
+.custom-sidebar a:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Estilo para o Título e Subtítulo */
+.main-title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: left;
+    color: #014A8E;
+    margin-bottom: 40px;
+}
+
+/* Calendário */
+.calendar-container {
+    margin-bottom: 30px;
+    max-width: 400px;
+    margin: 0 auto; /* Centraliza o calendário */
+}
+
+.calendar {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.month-year {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.day {
+    font-weight: bold;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.date-btn {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    background-color: transparent;
+}
+
+.date-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.date-btn.selected {
+    background-color: #014A8E;
+    color: white;
+}
+
+/* Horários */
+.schedule-container {
+    margin-top: 30px;
+}
+
+.schedule {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.time-btn {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.time-btn.selected {
+    background-color: #014A8E;
+    color: white;
+}
+
+.time-btn:hover {
+    background-color: #0056b3;
+}
+/* Estilo para o contêiner dos botões */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os botões */
+    margin-top: 20px;
+}
+
+/* Estilo para os botões */
+.button-container button {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Estilo para o botão 'Próximo' */
+button[type="submit"] {
+    background-color: #ff6f00; /* Laranja */
+    color: white;
+    border: none;
+}
+/* Estilo para o botão 'Voltar' */
+button[type="button"] {
+    background-color: #ff6f00; /* Laranja */
+    color: white;
+    border: none;
+}
+

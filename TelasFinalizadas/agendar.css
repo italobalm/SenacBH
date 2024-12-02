@@ -1,0 +1,152 @@
+/* Estilo para o Header */
+.header {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    background-image: url('imagens/BackGround Senac Beauty Hub (branco e maior) 1.png');
+    height: 130px;
+}
+
+.header img {
+    max-height: 90px;
+}
+
+/* Sidebar */
+.custom-sidebar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #014A8E; /* Cor atualizada da barra lateral */
+    color: white;
+}
+
+.custom-sidebar a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+}
+
+.custom-sidebar a:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Segmentos em Flexbox */
+.segment-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+.segment-item {
+    flex: 0 0 auto;
+}
+
+.segment-box {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Ícone e título alinhados à esquerda */
+    background-color: #014A8E;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    height: 57px;
+    transition: background-color 0.3s ease;
+}
+
+.segment-icon {
+    font-size: 1.5rem;  /* Tamanho do ícone */
+    margin-right: 15px; /* Distância entre ícone e título */
+}
+
+.segment-title {
+    font-size: 1.1rem;
+}
+
+/* Efeito Hover para o Retângulo */
+.segment-box:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+/* Estilo para o Título e Subtítulo */
+.main-title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: left;
+    color: #014A8E;
+    margin-bottom: 40px; /* Aumentado para afastar mais os segmentos */
+}
+
+/* Segmentos em Flexbox */
+.segments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px; /* Adicionando margem superior para afastar mais */
+}
+
+/* Estilo para o contêiner do botão "Próximo" */
+.rectangle-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+/* Estilo para o botão "Próximo" */
+.btn-primary {
+    background-color: #ff6f00; /* Cor laranja do Botão 2 */
+    color: white;
+    border: none;
+    padding: 10px 30px; /* Ajuste no padding para igualar ao do Botão 2 */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px; /* Bordas arredondadas como o Botão 2 */
+    cursor: pointer; /* Adiciona o cursor pointer */
+    transition: opacity 0.3s ease; /* Adiciona transição */
+}
+
+/* Efeito de hover do Botão 1 (semelhante ao Botão 2) */
+.btn-primary:hover {
+    background-color: #e6884f; /* Cor de hover semelhante ao Botão 2 */
+}
+
+
+  /* Estilo para ocultar a bolinha do radio button e deixar ele com visual de botão */
+  input[type="radio"] {
+    display: none; /* Esconde a bolinha do radio */
+}
+
+.segment-box {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+    background-color: #014A8E;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    height: 57px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.segment-box:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para quando o radio button está selecionado */
+input[type="radio"]:checked + .segment-box {
+    background-color: #0056b3; /* Cor de fundo quando o item é selecionado */
+}
