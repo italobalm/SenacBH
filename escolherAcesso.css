@@ -1,0 +1,106 @@
+body{
+    background-image: url("img/fundo-header.png");
+    background-size: 1200px;
+}
+
+/* Estilos para a nav */
+.custom-nav {
+    padding: 10px 20px; /* Espaçamento interno */
+  }
+  
+  .container-nav {
+    display: flex; /* Flexbox para organização */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Espaço igual entre os elementos */
+  }
+  
+  /* Estilos das logos */
+  .logo {
+    max-height: 60px; /* Altura máxima para as logos */
+    object-fit: contain; /* Mantém proporções */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+  }
+
+  .logo1{
+    max-width: 150px;
+  }
+  
+  .spacer {
+    flex: 1; /* Garante espaço central vazio para alinhamento */
+  }
+  
+/* Botões Elegantes */
+.btn-elegant {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 200px; /* Aumentado para caber o texto */
+    height: 180px; /* Proporcional ao aumento da largura */
+    border-radius: 12px;
+    background: #f8f9fa;
+    color: #D08040;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  
+  .btn-elegant:hover {
+    background: #D08040;
+    color: #fff;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+  }
+  
+  /* Ícones dos Botões */
+  .btn-elegant i {
+    font-size: 36px;
+    margin-bottom: 12px; /* Ajuste para distanciar do texto */
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-elegant:hover i {
+    transform: scale(1.1);
+  }
+  
+  /* Texto dos Botões */
+  .btn-elegant span {
+    font-size: 18px; /* Aumentado para destaque */
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .btn-elegant:hover span {
+    font-weight: bold;
+  }
+
+  /* Estilo dos botões */
+.button-container {
+  position: fixed;
+  bottom: 20px; 
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Botão Voltar */
+.voltar-btn {
+  width: auto; /* Largura automática para o botão */
+  padding: 8px 16px; /* Tamanho pequeno e confortável */
+  background-color: #ffa07a;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.voltar-btn:hover {
+  background-color: #ff7f50;
+}
+  

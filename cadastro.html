@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAC Beauty Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="custom-nav">
+        <div class="container-nav">
+          <!-- Logo do lado esquerdo -->
+          <div class="logo-left">
+            <img src="img/logo.png" alt="Logo Esquerda" class="logo1">
+          </div>
+      
+          <!-- Centralizador (espaço vazio opcional para ajustes estéticos) -->
+          <div class="spacer"></div>
+      
+          <!-- Logo do lado direito -->
+          <div class="logo-right">
+            <img src="img/logo-senac.png" alt="Logo Direita" class="logo">
+          </div>
+        </div>
+      </nav>
+
+    <div class="organizar">
+    <!-- Formulário de Cadastro dentro de um container com fundo branco -->
+    <div class="container cadastro-container my-4 p-4">
+        <div class="form-wrapper p-4">
+            <h1 class="text-center mb-4">Realizar seu cadastro</h1>
+            <form class="w-100">
+                <div class="input-container mb-3">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome" class="form-control" required>
+                </div>
+
+                <div class="input-container mb-3">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" class="form-control" required>
+                </div>
+
+                <div class="input-container mb-3">
+                    <label for="data-nascimento">Data de Nascimento</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" class="form-control" required>
+                </div>
+
+                <div class="input-container mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" class="form-control" required>
+                </div>
+
+                <div class="input-container mb-3">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Senha" class="form-control" required>
+                </div>
+
+                <div class="input-container mb-3">
+                    <label for="confirm-password">Confirmar Senha</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmar Senha" class="form-control" required>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <!-- Botão de voltar, redireciona para a página de login -->
+        <button type="button" class="voltar-btn" onclick="window.location.href='escolherAcesso.html'">Voltar</button>
+       
+        <!-- Botão de voltar, redireciona para a página de login -->
+        <button type="button" class="voltar-btn" onclick="window.location.href='inde.html'">Finalizar</button>
+    <!-- Script do Bootstrap -->
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
