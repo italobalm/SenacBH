@@ -39,11 +39,12 @@
 
   .sidebar {
     height: 100%;
+    position: fixed;
 }
 
 
   .custom-sidebar {
-    min-height: 100vh;
+    min-height: 150vh;
     display: flex;
     flex-direction: column;
     background-color: var(--AzulPrincipal); /* Cor atualizada da barra lateral */
@@ -83,53 +84,7 @@
     border: 2px solid white; /* Borda para destacar a foto */
   }
 
-  main {
-    min-height: 100vh;
-}
-
-
-/* Segmentos em Flexbox */
-.segment-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 30%;
-}
-
-.segment-item {
-    flex: 0 0 auto;
-}
-
-.segment-box {
-    display: flex;
-    align-items: center;
-    justify-content: start; /* Ícone e título alinhados à esquerda */
-    background-color: #014A8E;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 20px;
-    height: 57px;
-    transition: background-color 0.3s ease;
-}
-
-.segment-icon {
-    font-size: 1.5rem;  /* Tamanho do ícone */
-    margin-right: 15px; /* Distância entre ícone e título */
-}
-
-.segment-title {
-    font-size: 1.1rem;
-}
-
-/* Efeito Hover para o Retângulo */
-.segment-box:hover {
-    background-color: #0056b3;
-    cursor: pointer;
-}
-
-/* Estilo para o Título e Subtítulo */
+  /* Estilo para o Título e Subtítulo */
 .main-title {
     text-align: left;
     margin-bottom: 10px;
@@ -141,72 +96,96 @@
     margin-bottom: 40px; /* Aumentado para afastar mais os segmentos */
 }
 
-/* Segmentos em Flexbox */
-.segments {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 40px; /* Adicionando margem superior para afastar mais */
+  main {
+    min-height: 100vh;
 }
 
-/* Estilo para o contêiner do botão "Próximo" */
-.rectangle-container {
+
+/* Estilo para os itens de serviço */
+.service-item {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Estilo do checkbox */
+.service-item input {
+    margin-right: 15px;
+    transform: scale(1.3); /* Aumentando o tamanho do checkbox */
+}
+
+/* Alinha o preço à direita */
+.service-item .badge {
+    margin-left: auto; /* Coloca o badge à direita */
+    background-color: #014A8E;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Botão de confirmação */
+.btn-primary {
+    background-color: #014A8E;
+    border-color: #014A8E;
+}
+
+.btn-primary:hover {
+    background-color: #00549B;
+    border-color: #00549B;
+}
+
+/* Estilo para o contêiner dos botões */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os botões */
     margin-top: 20px;
 }
 
-/* Estilo para o botão "Próximo" */
-.btn-primary {
-    background-color: #D08040; /* Cor laranja do Botão 2 */
+/* Estilo para os botões */
+.button-container button {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Estilo para o botão 'Próximo' */
+.btn[type="submit"] {
+    background-color: #D08040; /* Laranja */
     color: white;
     border: none;
-    padding: 10px 30px; /* Ajuste no padding para igualar ao do Botão 2 */
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 25px; /* Bordas arredondadas como o Botão 2 */
-    cursor: pointer; /* Adiciona o cursor pointer */
-    transition: opacity 0.3s ease; /* Adiciona transição */
 }
 
-/* Efeito de hover do Botão 1 (semelhante ao Botão 2) */
-.btn-primary:hover {
-    background-color: #D08040; /* Cor de hover semelhante ao Botão 2 */
-}
-
-
-  /* Estilo para ocultar a bolinha do radio button e deixar ele com visual de botão */
-  input[type="radio"] {
-    display: none; /* Esconde a bolinha do radio */
-}
-
-.segment-box {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centraliza o conteúdo */
-    background-color: #014A8E;
+/* Estilo para o botão 'Voltar' */
+.btn[type="button"] {
+    background-color: #D08040; /* Laranja */
     color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 20px;
-    height: 57px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    margin-bottom: 15px;
-    text-align: center;
+    border: none;
 }
 
-.segment-box:hover {
-    background-color: #D08040;
+.btn[type="submit"]:hover, button[type="button"]:hover {
+    opacity: 0.8; /* Efeito de hover */
 }
 
-/* Estilo para quando o radio button está selecionado */
-input[type="radio"]:checked + .segment-box {
-    background-color: #D08040; /* Cor de fundo quando o item é selecionado */
+.btn i {
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
 }
 
+/* Adicionando margem entre os botões */
+button[type="submit"] {
+    margin-left: 10px; /* Margem entre os botões */
+}
+
+button[type="button"] {
+    margin-right: 10px; /* Margem entre os botões */
+}
 
 
 /* Estilo para quando o menu for exibido no mobile */
@@ -238,8 +217,6 @@ input[type="radio"]:checked + .segment-box {
         width: 50px;
         height: 50px;
     }
-
-
 }
 
 /* Botão do Menu Hamburger */
@@ -315,33 +292,29 @@ input[type="radio"]:checked + .segment-box {
         color: var(--AzulSecundario);
         margin-bottom: 30px; /* Aumenta a margem entre o subtítulo e conteúdo */
         text-align: center; /* Centraliza o subtítulo */
+
     }
 
-    /* Segmentos */
-    .segments {
-        display: flex;
-        flex-direction: column; /* Organiza os segmentos em coluna no mobile */
-        align-items: center; /* Centraliza os itens */
-        gap: 20px; /* Espaço entre os segmentos */
-    }
-
-    .segment-column {
-        width: 100%; /* Segmentos ocupam toda a largura no mobile */
-    }
-
-    /* Botões e caixas de segmento */
-    .segment-box {
-        width: 100%; /* Faz os botões ocuparem toda a largura */
-        max-width: 300px; /* Limita o tamanho máximo */
-        margin: 10px 0; /* Distância entre os botões */
-        padding: 15px; /* Maior espaçamento interno */
-        font-size: 1.1rem; /* Tamanho da fonte ajustado */
-        text-align: center; /* Centraliza o texto no botão */
-    }
-
-    .btn-primary {
-        width: 30%; /* Botões ocupam toda a largura no mobile */
+    .btn [type="submit"] {
+        width: 30%;
+        padding: 8px 0;
         font-size: 12px;
-        padding: 8px 0; /* Maior altura para os botões */
+        background-color: #D08040; /* Laranja */
+        color: white;
+        border: none;
+    }
+    
+    /* Estilo para o botão 'Voltar' */
+    .btn[type="button"] {
+        width: 30%;
+        padding: 8px 0;
+        font-size: 12px;
+        background-color: #D08040; /* Laranja */
+        color: white;
+        border: none;
+    }
+
+    .service-item{
+        font-size: 12px;
     }
 }
