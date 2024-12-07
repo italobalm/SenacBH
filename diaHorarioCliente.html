@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="diaHorarioCliente.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="header d-flex justify-content-between align-items-center px-4">
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="logo-left d-none d-md-block">
+                <img src="img/logoPerfis.png" alt="Logo Left" class="logo1">
+            </div>
+            <div class="logo-right d-none d-md-block">
+                <img src="./img/logo-senac.png" alt="Logo Right" class="logo2">
+            </div>
+        </header>
+        
+
+        
+        <div class="row no-gutters">
+          <!-- Botão do Menu Hamburger -->
+<button class="hamburger-btn" onclick="toggleSidebar()">☰</button>
+
+<!-- Sidebar -->
+<nav class="sidebar custom-sidebar" id="sidebar-menu">
+    <div class="text-center py-4">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="img/mulher3.png" alt="Foto de perfil" class="profile-pic me-2">
+            <h6>Bem-vinda, Júlia!</h6>
+        </div>
+    </div>
+    <p>PRINCIPAL</p>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link text-white" id="marked" href=""><i class="fas fa-calendar-alt me-2"></i>Agendar</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href=""><i class="fas fa-calendar-check me-2"></i>Meus agendamentos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#"><i class="fas fa-cogs me-2"></i>Serviços</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href=""><i class="fas fa-comments me-2"></i>Fale conosco</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#"><i class="fas fa-cog me-2"></i>Configurações</a>
+        </li>
+        <br>
+        <li class="text-center mt-auto py-2">
+            <a href="index.html" class="text-white"><i class="fas fa-power-off"></i> Sair</a>
+        </li>
+    </ul>
+</nav>
+
+
+            <!-- Main Content -->
+            <main class="col-md-9 col-lg-10 p-4">
+                <h3 class="main-title">Agendar</h3>
+                <h5 class="subtitle">Selecione um dia e horário</h5>
+
+                <!-- Calendário -->
+                <div class="calendar-container">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <button class="prev-month">&lt;</button>
+                            <span class="month-year">Dezembro 2024</span>
+                            <button class="next-month">&gt;</button>
+                        </div>
+                        <div class="calendar-days">
+                            <div class="day">Su</div>
+                            <div class="day">Mo</div>
+                            <div class="day">Tu</div>
+                            <div class="day">We</div>
+                            <div class="day">Th</div>
+                            <div class="day">Fr</div>
+                            <div class="day">Sa</div>
+                        </div>
+                        <div class="calendar-dates">
+                            <button class="date-btn" data-day="27">27</button>
+                            <button class="date-btn" data-day="28">28</button>
+                            <button class="date-btn" data-day="29">29</button>
+                            <button class="date-btn" data-day="30">30</button>
+                            <button class="date-btn" data-day="31">31</button>
+                            <button class="date-btn" data-day="1">1</button>
+                            <button class="date-btn" data-day="2">2</button>
+                            <button class="date-btn" data-day="3">3</button>
+                            <button class="date-btn" data-day="4">4</button>
+                            <button class="date-btn" data-day="5">5</button>
+                            <button class="date-btn" data-day="6">6</button>
+                            <button class="date-btn" data-day="7">7</button>
+                            <button class="date-btn" data-day="8">8</button>
+                            <button class="date-btn" data-day="9">9</button>
+                            <button class="date-btn" data-day="10">10</button>
+                            <button class="date-btn" data-day="11">11</button>
+                            <button class="date-btn" data-day="12">12</button>
+                            <button class="date-btn" data-day="13">13</button>
+                            <button class="date-btn" data-day="14">14</button>
+                            <button class="date-btn" data-day="15">15</button>
+                            <button class="date-btn" data-day="16">16</button>
+                            <button class="date-btn" data-day="17">17</button>
+                            <button class="date-btn" data-day="18">18</button>
+                            <button class="date-btn" data-day="19">19</button>
+                            <button class="date-btn" data-day="20">20</button>
+                            <button class="date-btn" data-day="21">21</button>
+                            <button class="date-btn" data-day="22">22</button>
+                            <button class="date-btn" data-day="23">23</button>
+                            <button class="date-btn" data-day="24">24</button>
+                            <button class="date-btn" data-day="25">25</button>
+                            <button class="date-btn" data-day="26">26</button>
+                            <button class="date-btn" data-day="27">27</button>
+                            <button class="date-btn" data-day="28">28</button>
+                            <button class="date-btn" data-day="29">29</button>
+                            <button class="date-btn" data-day="30">30</button>
+                            <!-- Adicionar os outros dias do mês aqui -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horários -->
+                <div class="schedule-container">
+                    <div class="schedule">
+                        <button class="btn btn-outline-primary time-btn" data-time="09:00">09:00</button>
+                        <button class="btn btn-outline-primary time-btn" data-time="10:00">10:00</button>
+                        <button class="btn btn-outline-primary time-btn" data-time="11:00">11:00</button>
+                        <button class="btn btn-outline-primary time-btn" data-time="12:00">12:00</button>
+                        <button class="btn btn-outline-primary time-btn" data-time="13:00">13:00</button>
+                        <button class="btn btn-outline-primary time-btn" data-time="14:00">14:00</button>
+                        <button class="btn btn-outline-primary time-btn" data-time="15:00">15:00</button>
+                        <button class="btn btn-outline-primary time-btn" data-time="16:00">16:00</button>
+                        <button class="btn btn-outline-primary time-btn" data-time="17:00">17:00</button>
+                        <button class="btn btn-outline-primary time-btn" data-time="18:00">18:00</button>
+                    </div>
+                </div>
+                  <!-- Botões Voltar e Próximo -->
+                  <div class="text-center mt-4">
+                    <div class="button-container">
+                        <button type="button" class="btn btn-secondary me-2" onclick="window.history.back();">
+                            <i class="fas fa-arrow-left me-2"></i> Voltar
+                        </button>
+                        <button type="submit" class="btn btn-primary" onclick="window.location.href='profissionalCliente.html';">
+                            <i class="fas fa-arrow-right me-2"></i> Próximo
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="diaHorarioCliente.js">
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
