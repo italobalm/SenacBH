@@ -15,6 +15,9 @@ window.onload = function() {
     const correctEmailFuncionario = "funcionario";
     const correctPasswordFuncionario = "12345";
 
+    const correctEmailCliente = "funcionario";
+    const correctPasswordCliente = "12345";
+
     // Escuta o evento de envio do formulário
     loginForm.addEventListener("submit", function(event) {
         event.preventDefault(); // Impede o envio do formulário
@@ -30,6 +33,10 @@ window.onload = function() {
         } else if (email === correctEmailFuncionario && password === correctPasswordFuncionario) {
             // Redireciona para 'index.html' se as credenciais estiverem corretas
             window.location.href = 'calendarioFuncionario.html';
+        
+        } else if (email === correctEmailCliente && password === correctPasswordCliente) {
+            // Redireciona para 'index.html' se as credenciais estiverem corretas
+            window.location.href = 'agendarCliente.html';
 
         
         } else {
