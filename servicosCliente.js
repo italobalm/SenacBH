@@ -49,54 +49,46 @@ document.addEventListener("DOMContentLoaded", function () {
     updateTotal();
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
-    // Lista de serviços e preços
-    const services = [
-        { id: "argiloterapia", name: "Argiloterapia + Hidratação Corporal", price: 65.00 },
-        { id: "banho-de-lua", name: "Banho de Lua", price: 85.00 },
-        { id: "corrente-russa", name: "Corrente Russa (por área)", price: 46.00 },
-        { id: "criolipolise-1-area", name: "Criolipólise com contraste (1 área por sessão)", price: 150.00 },
-        { id: "criolipolise-2-areas", name: "Criolipólise com contraste (2 áreas por sessão)", price: 250.00 },
-        { id: "drenagem-linfatica-corporal", name: "Drenagem linfática corporal manual (por área)", price: 65.00 },
-        { id: "drenagem-linfatica-pos-cirurgica", name: "Drenagem linfática corporal pós-cirúrgica (por área)", price: 70.00 },
-        { id: "drenagem-linfatica-facial", name: "Drenagem linfática facial", price: 40.00 },
-        { id: "esfoliacao-hidratacao", name: "Esfoliação + Hidratação Corporal", price: 60.00 },
-        { id: "harmonizacao-heccus", name: "Harmonização Corporal com HECCUS (por área)", price: 70.00 },
-        { id: "hidratacao-facial", name: "Hidratação Facial com Eletroterapia", price: 55.00 },
-        { id: "limpeza-de-pele", name: "Limpeza de Pele", price: 85.00 },
-        { id: "linft-radiofrequencia", name: "Linft Facial com Rádio Frequência", price: 75.00 },
-        { id: "massagem-modeladora", name: "Massagem Modeladora Localizada (por área)", price: 66.00 }
-    ];
+    const serviceItems = document.querySelectorAll(".service-item input");
 
-    // Atualizar total e salvar seleção
-    function updateSelection() {
-        const selectedServices = [];
+    // Preços dos serviços
+    const prices = {
+        "argiloterapia": 65.00,
+        "banho-de-lua": 85.00,
+        "corrente-russa": 46.00,
+        "criolipolise-1-area": 150.00,
+        "criolipolise-2-areas": 250.00,
+        "drenagem-linfatica-corporal": 65.00,
+        "drenagem-linfatica-pos-cirurgica": 70.00,
+        "drenagem-linfatica-facial": 40.00,
+        "esfoliacao-hidratacao": 60.00,
+        "harmonizacao-heccus": 70.00,
+        "hidratacao-facial": 55.00,
+        "limpeza-de-pele": 85.00,
+        "linft-radiofrequencia": 75.00,
+        "massagem-modeladora": 66.00
+    };
+
+    function updateData() {
         let total = 0;
+        let selectedServices = [];
 
-        services.forEach(service => {
-            const checkbox = document.getElementById(service.id);
-            if (checkbox.checked) {
-                selectedServices.push(service);
-                total += service.price;
+        serviceItems.forEach(item => {
+            if (item.checked) {
+                total += prices[item.id];
+                selectedServices.push(item.nextSibling.textContent.trim());
             }
         });
 
-        // Atualiza o total exibido
-        document.getElementById("total-display").textContent = total.toFixed(2);
-
-        // Salva os serviços selecionados no localStorage
+        // Armazenar no localStorage
         localStorage.setItem("selectedServices", JSON.stringify(selectedServices));
+        localStorage.setItem("totalAmount", total.toFixed(2));
     }
 
-    // Adiciona eventos aos checkboxes
-    services.forEach(service => {
-        const checkbox = document.getElementById(service.id);
-        if (checkbox) {
-            checkbox.addEventListener("change", updateSelection);
-        }
+    // Atualizar os dados ao marcar/desmarcar um serviço
+    serviceItems.forEach(item => {
+        item.addEventListener("change", updateData);
     });
-
-    // Atualiza total na primeira carga (caso já tenha algo salvo)
-    updateSelection();
 });
-
