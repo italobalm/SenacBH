@@ -131,13 +131,13 @@
 
 /* Botão de confirmação */
 .btn-primary {
-    background-color: #014A8E;
-    border-color: #014A8E;
+    background-color: #D08040;
+    border-color: #D08040;
 }
 
 .btn-primary:hover {
-    background-color: #00549B;
-    border-color: #00549B;
+    background-color: #D08040;
+    border-color: #D08040;
 }
 
 /* Estilo para o contêiner dos botões */

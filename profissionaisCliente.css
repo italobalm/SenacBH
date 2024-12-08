@@ -123,14 +123,23 @@ body {
   button {
     display: block;
     margin: 10px auto;
-    padding: 10px 20px;
+    padding: 12px 25px; /* Ajuste para mais conforto visual */
     font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #014A8E;
+    font-weight: bold; /* Texto em negrito para destacar */
     color: white;
+    background-color: #014A8E; /* Cor principal */
+    border: 2px solid transparent; /* Bordas suaves */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
     cursor: pointer;
-  }
+    transition: all 0.3s ease; /* Transição suave para interações */
+}
+
+button:hover {
+    background-color: #0165C3; /* Cor mais clara ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Realce na sombra */
+    transform: translateY(-2px); /* Leve elevação */
+}
 
 
   hr {
