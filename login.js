@@ -15,7 +15,7 @@ window.onload = function() {
     const correctEmailFuncionario = "funcionario";
     const correctPasswordFuncionario = "12345";
 
-    const correctEmailCliente = "funcionario";
+    const correctEmailCliente = "cliente";
     const correctPasswordCliente = "12345";
 
     // Escuta o evento de envio do formulário
@@ -37,7 +37,7 @@ window.onload = function() {
         } else if (email === correctEmailCliente && password === correctPasswordCliente) {
             // Redireciona para 'index.html' se as credenciais estiverem corretas
             window.location.href = 'agendarCliente.html';
-
+ 
         
         } else {
             // Exibe a mensagem de erro se as credenciais estiverem incorretas

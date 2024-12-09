@@ -73,6 +73,8 @@
 @media (max-width: 768px) {
   .navbar-nav {
     padding: 5px;
+    margin-bottom: -30px;
+    border-radius: 15px;
       background-color: #014A8E; /* Aumenta a opacidade do fundo em telas pequenas */
   }
 
@@ -96,7 +98,7 @@
     width: 30%;             /* Botões ocupam 30% da largura */
     font-size: 12px;        /* Tamanho menor para o texto */
     padding: 8px;           /* Reduz o preenchimento interno */
-    background-color: rgba(255, 165, 0, 1); /* Fundo dos botões sólido, sem opacidade */
+    background-color: darkorange; /* Fundo dos botões sólido, sem opacidade */
     color: white;           /* Cor do texto no botão */
     border: none;           /* Remove a borda do botão, caso haja */
   }
@@ -258,6 +260,7 @@ hr {
 
   font-weight: bold;
   color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .descricao-beneficio {
@@ -294,6 +297,7 @@ hr {
 .card {
   text-align: center;
   margin-top: 80px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Garantindo que os cards fiquem centralizados */
@@ -477,7 +481,7 @@ footer .contact-info strong {
 }
 
 .btn-agendamento {
-  background-color: #D08040; /* Cor de fundo personalizada */
+  background-color: darkorange; /* Cor de fundo personalizada */
   color: #fff; /* Cor do texto */
   padding: 10px 20px; /* Espaçamento interno do botão */
   text-decoration: none; /* Remove o sublinhado */
