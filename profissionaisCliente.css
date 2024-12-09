@@ -130,14 +130,13 @@ body {
     background-color: #014A8E; /* Cor principal */
     border: 2px solid transparent; /* Bordas suaves */
     border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
     cursor: pointer;
     transition: all 0.3s ease; /* Transição suave para interações */
 }
 
 button:hover {
-    background-color: #0165C3; /* Cor mais clara ao passar o mouse */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Realce na sombra */
+
+    background-color: transparent; /* Cor mais clara ao passar o mouse */
     transform: translateY(-2px); /* Leve elevação */
 }
 
@@ -267,14 +266,22 @@ input[type="radio"]:checked + .segment-box {
     position: fixed;
     top: 15px;
     left: -100px !important;
-    background-color: var(--AzulPrincipal);
-    color: white;
+    background-color: transparent;
+    color: transparent;
     border: none;
     font-size: 24px;
-    padding: 10px;
+    padding: 50px;
+    padding-left: 5px;
     border-radius: 5px;
     cursor: pointer;
     z-index: 1000; /* Sempre acima da sidebar */
+
+}
+
+.togglesidebar{
+  width: 900%;
+  background-color: transparent;
+  
 }
 
 /* Sidebar para mobile */
@@ -293,26 +300,28 @@ input[type="radio"]:checked + .segment-box {
 
 /* Responsividade para exibir o botão */
 @media (max-width: 767px) {
-    .hamburger-btn {
-        display: block; 
-        color: var(--AzulPrincipal);
-        background: none;/* Botão visível apenas no mobile */
-    }
+  .hamburger-btn {
+      display: block; 
+      color: var(--AzulPrincipal);
+      background: none;/* Botão visível apenas no mobile */
 
-    .sidebar {
-        width: 250px;
-        height: 100vh;
-        left: -300px;
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-    }
 
-        /* Sidebar visível (aberta) */
-    .sidebar.open{
-        left: 0; /* Move para dentro da tela */
-    }
+  }
+
+  .sidebar {
+      width: 250px;
+      height: 100vh;
+      left: -300px;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+  }
+
+      /* Sidebar visível (aberta) */
+  .sidebar.open{
+      left: 0; /* Move para dentro da tela */
+  }
 }
 
 /* Responsividade para o main no mobile */

@@ -282,16 +282,23 @@ button[type="button"] {
     position: fixed;
     top: 15px;
     left: -100px !important;
-    background-color: var(--AzulPrincipal);
-    color: white;
+    background-color: transparent;
+    color: transparent;
     border: none;
     font-size: 24px;
-    padding: 10px;
+    padding: 50px;
+    padding-left: 5px;
     border-radius: 5px;
     cursor: pointer;
     z-index: 1000; /* Sempre acima da sidebar */
+
 }
 
+.togglesidebar{
+  width: 900%;
+  background-color: transparent;
+  
+}
 /* Sidebar para mobile */
 .sidebar {
     position: relative;

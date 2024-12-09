@@ -249,14 +249,22 @@ input[type="radio"]:checked + .segment-box {
     position: fixed;
     top: 15px;
     left: -100px !important;
-    background-color: var(--AzulPrincipal);
-    color: white;
+    background-color: transparent;
+    color: transparent;
     border: none;
     font-size: 24px;
-    padding: 10px;
+    padding: 50px;
+    padding-left: 5px;
     border-radius: 5px;
     cursor: pointer;
     z-index: 1000; /* Sempre acima da sidebar */
+
+}
+
+.togglesidebar{
+  width: 900%;
+  background-color: transparent;
+  
 }
 
 /* Sidebar para mobile */
@@ -324,6 +332,8 @@ input[type="radio"]:checked + .segment-box {
         flex-direction: column; /* Organiza os segmentos em coluna no mobile */
         align-items: center; /* Centraliza os itens */
         gap: 20px; /* Espaço entre os segmentos */
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .segment-column {
