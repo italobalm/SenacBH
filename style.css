@@ -42,18 +42,18 @@
 }
 
 .btn-orange {
-  background-color: darkorange;
-  border-color: darkorange;
+  background-color: #D08040;
+  border-color: #D08040;
 }
 
 .btn-white {
   background-color: white;
-  border-color: darkorange;
+  border-color: #D08040;
 }
 
 .btn-orange:hover {
-  background-color: darkorange;
-  border-color: darkorange;
+  background-color: #faa763;
+  border-color: #faa763;
 }
 
 .container{
@@ -98,13 +98,13 @@
     width: 30%;             /* Botões ocupam 30% da largura */
     font-size: 12px;        /* Tamanho menor para o texto */
     padding: 8px;           /* Reduz o preenchimento interno */
-    background-color: darkorange; /* Fundo dos botões sólido, sem opacidade */
+    background-color: #D08040; /* Fundo dos botões sólido, sem opacidade */
     color: white;           /* Cor do texto no botão */
     border: none;           /* Remove a borda do botão, caso haja */
   }
 
   .navbar-buttons .btn:hover {
-    background-color: #FF8C00; /* Cor de fundo ao passar o mouse */
+    background-color: #faa763; /* Cor de fundo ao passar o mouse */
   }
 }
 
@@ -481,7 +481,7 @@ footer .contact-info strong {
 }
 
 .btn-agendamento {
-  background-color: darkorange; /* Cor de fundo personalizada */
+  background-color: #D08040; /* Cor de fundo personalizada */
   color: #fff; /* Cor do texto */
   padding: 10px 20px; /* Espaçamento interno do botão */
   text-decoration: none; /* Remove o sublinhado */
