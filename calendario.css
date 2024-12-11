@@ -59,6 +59,10 @@
   border-collapse: collapse;
 }
 
+.dm-none{
+  color: white
+}
+
 .calendar td, .calendar th {
   width: 120px; /* Aumentando a largura */
   height: 120px; /* Aumentando a altura */
