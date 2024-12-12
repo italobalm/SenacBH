@@ -1,5 +1,43 @@
+/*Cores do Senac*/
+:root {
+  --laranja-senac:#D08040;
+  --branco:white;
+  --AzulPrincipal:#014A8E;
+  --preto:#000000;
+  --AzulSecundario:#1C6DB9;
+  --brano-cinza:#E0E0E0;
+}
 
 
+/*Logos no topo*/
+.header {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+  background-image: url('img/fundo-header.png');
+  background-size: 1200px;
+  height: 130px;
+}
+
+.header img {
+  max-height: 60px;
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+  background-image: url('img/fundo-header.png');
+  background-size: 1200px;
+  height: 130px;
+}
+
+.header img {
+  max-height: 60px;
+}
+
+
+/*Parte principal da página*/
 .title{
   font-size: 36px;
 }
@@ -43,139 +81,90 @@
     border-color: #007bff;
     outline: none;
   }
+ 
   
-  /* Estilo para o contêiner dos botões */
+  /* Botão de voltar e salvar */
 .button-container {
   display: flex;
-  justify-content: space-between; /* Espaço entre os botões */
+  justify-content: space-between; 
   margin-top: 20px;
 }
 
-/* Estilo para os botões */
 .button-container button {
   padding: 10px 30px;
   font-size: 16px;
-  border-radius: 25px; /* Bordas arredondadas */
+  border-radius: 25px; 
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
 
-/* Estilo para o botão 'Próximo' */
 .btn{
-  background-color: #D08040; /* Laranja */
+  background-color: #D08040; 
   color: white;
   border: none;
 }
 
-/* Estilo para o botão 'Voltar' */
 .btn-voltar[type="button"] {
-  background-color: #D08040; /* Laranja */
+  background-color: #D08040; 
   color: white;
   border: none;
 }
 
 .btn[type="submit"]:hover, button[type="button"]:hover {
-  opacity: 0.8; /* Efeito de hover */
-}
-
-.btn i {
-  margin-right: 5px; /* Espaço entre o ícone e o texto */
-}
-
-/* Adicionando margem entre os botões */
-button[type="submit"] {
-  margin-left: 10px; /* Margem entre os botões */
-}
-
-button[type="button"] {
-  margin-right: 10px; /* Margem entre os botões */
+  opacity: 0.8; 
 }
 
 
-@media (max-width: 768px) { /* Ajuste o valor conforme necessário */
+/*Estilos para o modo mobile*/
+
+/*Topo*/
+@media (max-width: 768px) { 
   .logo-left,
   .logo-right {
       display: none;
   }
 
-  
+}
+
+/* Parte principal */
+@media (max-width: 767px) {
+  main {
+      padding: 20px; 
+      margin-top: 60px; 
+      
+  }
+
+  .title {
+      font-size: 1.8rem; 
+      margin-bottom: 20px; 
+      text-align: center; 
+  }
+
+  .subtitle {
+      font-size: 1rem; 
+      color: var(--AzulSecundario);
+      margin-bottom: 30px; 
+      text-align: center; 
+  }
+
   .btn [type="submit"] {
     width: 30%;
     padding: 3px 0;
     font-size: 12px;
-    background-color: #D08040; /* Laranja */
+    background-color: #D08040; 
     color: white;
     border: none;
     text-align: center;
 }
 
-/* Estilo para o botão 'Voltar' */
+
 .btn-voltar[type="button"] {
     width: 30%;
     padding: 8px 0;
     font-size: 12px;
-    background-color: #D08040; /* Laranja */
+    background-color: #D08040;
     color: white;
     border: none;
     text-align: center !important;
 }
-}
-
-:root {
-  --laranja-senac:#D08040;
-  --branco:white;
-  --AzulPrincipal:#014A8E;
-  --preto:#000000;
-  --AzulSecundario:#1C6DB9;
-  --brano-cinza:#E0E0E0;
-}
-
-
-.header {
-  background-color: #fff;
-  border-bottom: 2px solid #ddd;
-  padding: 10px 0;
-  background-image: url('img/fundo-header.png');
-  background-size: 1200px;
-  height: 130px;
-}
-
-.header img {
-  max-height: 60px;
-}
-
-.header {
-  background-color: #fff;
-  border-bottom: 2px solid #ddd;
-  padding: 10px 0;
-  background-image: url('img/fundo-header.png');
-  background-size: 1200px;
-  height: 130px;
-}
-
-.header img {
-  max-height: 60px;
-}
-
-/* Responsividade para o main no mobile */
-@media (max-width: 767px) {
-  main {
-      padding: 20px; /* Reduz o padding no mobile */
-      margin-top: 60px; /* Distância do topo no mobile */
-      
-  }
-
-  /* Melhorando os títulos no mobile */
-  .title {
-      font-size: 1.8rem; /* Tamanho do título no mobile */
-      margin-bottom: 20px; /* Distância maior entre o título e conteúdo */
-      text-align: center; /* Centraliza o título */
-  }
-
-  .subtitle {
-      font-size: 1rem; /* Tamanho reduzido no mobile */
-      color: var(--AzulSecundario);
-      margin-bottom: 30px; /* Aumenta a margem entre o subtítulo e conteúdo */
-      text-align: center; /* Centraliza o subtítulo */
-  }
 }
