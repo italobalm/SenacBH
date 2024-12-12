@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senac Beauty Hub</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Font Awesome para ícones -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
     <!-- CSS externo -->
     <link rel="stylesheet" href="agendarCliente.css">
     
 </head>
 <body>
      <div class="container-fluid">
+
+        <!--Logos do Senac e do Senac Beauty Hub no topo da página-->
         <header class="header d-flex justify-content-between align-items-center px-4">
             <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,10 +32,9 @@
         </header>
         
 
-        
         <div class="row no-gutters">
           <!-- Botão do Menu Hamburger -->
-<button class="hamburger-btn" onclick="toggleSidebar()">☰</button>
+        <button class="hamburger-btn" onclick="toggleSidebar()">☰</button>
 
 <!-- Sidebar -->
 <nav class="sidebar custom-sidebar" id="sidebar-menu">
@@ -63,13 +67,13 @@
 </nav>
 
             
-            <!-- Main Content -->
-            <main class="col-md-9 col-lg-10 p-4">
-                <h3 class="main-title">Agendar</h3>
-                <h5 class="subtitle">Escolha um segmento</h5>
-                <form id="segment-form" action="servicosCliente.html" method="GET">
+        <!-- Parte principal -->
+        <main class="col-md-9 col-lg-10 p-4">
+            <h3 class="main-title">Agendar</h3>
+            <h5 class="subtitle">Escolha um segmento</h5>
+            <form id="segment-form" action="servicosCliente.html" method="GET">
                     <div class="segments mt-4">
-                        <!-- Primeira coluna de segmentos -->
+
                         <div class="segment-column">
                             <div class="segment-item">
                                 <input type="radio" id="estetica" name="segmento" value="Estética">
@@ -97,7 +101,7 @@
                             </div>
                         </div>
 
-                        <!-- Segunda coluna de segmentos -->
+
                         <div class="segment-column">
                             <div class="segment-item">
                                 <input type="radio" id="podologia" name="segmento" value="Podologia">
@@ -125,7 +129,6 @@
                             </div>
                         </div>
 
-                        <!-- Terceira coluna de segmentos -->
                         <div class="segment-column">
                             <div class="segment-item">
                                 <input type="radio" id="hastecapilar" name="segmento" value="Haste Capilar">
@@ -149,14 +152,14 @@
                         </button>
                     </div>
                 </form>
-            </main>
+        </main>
         </div>
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!--Ligando ao Js-->
+    <!--Ligando ao Js externo-->
     <script src="agendarCliente.js"></script>
 </body>
 </html>

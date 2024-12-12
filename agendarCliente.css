@@ -1,3 +1,4 @@
+/* Possíveis cores do Senac para aplicarmos nas telas */
 :root {
     --laranja-senac:#D08040;
     --branco:white;
@@ -8,6 +9,7 @@
   }
   
 
+  /*Estilo da header com as logos */
 .header {
     background-color: #fff;
     border-bottom: 2px solid #ddd;
@@ -35,10 +37,22 @@
   }
 
   
-  /* Sidebar */
-
+  
+/* Estilos da Sidebar */
   .sidebar {
     height: 100%;
+}
+
+.sidebar {
+    position: relative;
+    top: 0;
+    left: 0; 
+    width: 250px;
+    height: 100%;
+    background-color: var(--AzulPrincipal);
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 999;
 }
 
 
@@ -46,7 +60,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--AzulPrincipal); /* Cor atualizada da barra lateral */
+    background-color: var(--AzulPrincipal);
     color: var(--branco);
   }
   
@@ -73,22 +87,30 @@
     border-radius: 5px;
   }
   
-
-/* Estilo da foto de perfil */
 .profile-pic {
-    width: 40px; /* Tamanho da foto */
-    height: 40px; /* Altura igual à largura para ser redonda */
-    border-radius: 50%; /* Torna a imagem redonda */
-    object-fit: cover; /* Ajusta a imagem dentro do contêiner */
-    border: 2px solid white; /* Borda para destacar a foto */
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid white; 
   }
 
+  /*Parte principal do site*/
   main {
     min-height: 100vh;
 }
 
+.main-title {
+    text-align: left;
+    margin-bottom: 10px;
+}
 
-/* Segmentos em Flexbox */
+.subtitle {
+    text-align: left;
+    color: #014A8E;
+    margin-bottom: 40px; 
+}
+
 .segment-column {
     display: flex;
     flex-direction: column;
@@ -103,7 +125,7 @@
 .segment-box {
     display: flex;
     align-items: center;
-    justify-content: start; /* Ícone e título alinhados à esquerda */
+    justify-content: start; 
     background-color: #014A8E;
     color: white;
     font-size: 1.1rem;
@@ -115,77 +137,31 @@
 }
 
 .segment-icon {
-    font-size: 1.5rem;  /* Tamanho do ícone */
-    margin-right: 15px; /* Distância entre ícone e título */
+    font-size: 1.5rem; 
+    margin-right: 15px;
 }
 
 .segment-title {
     font-size: 1.1rem;
 }
 
-/* Efeito Hover para o Retângulo */
 .segment-box:hover {
     background-color: #0056b3;
     cursor: pointer;
 }
 
-/* Estilo para o Título e Subtítulo */
-.main-title {
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    text-align: left;
-    color: #014A8E;
-    margin-bottom: 40px; /* Aumentado para afastar mais os segmentos */
-}
-
-/* Segmentos em Flexbox */
 .segments {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: 40px; /* Adicionando margem superior para afastar mais */
-}
-
-/* Estilo para o contêiner do botão "Próximo" */
-.rectangle-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-}
-
-
-/* Estilo para o botão "Próximo" */
-.btn{
-    background-color: #D08040 !important; /* Cor laranja do Botão 2 */
-    color: white;
-    border: none;
-    padding: 10px 30px; /* Ajuste no padding para igualar ao do Botão 2 */
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 25px; /* Bordas arredondadas como o Botão 2 */
-    cursor: pointer; /* Adiciona o cursor pointer */
-    transition: opacity 0.3s ease; /* Adiciona transição */
-  }
-  
-  /* Efeito de hover do Botão 1 (semelhante ao Botão 2) */
-  .btn-primary:hover {
-    background-color: #D08040 !important; /* Cor de hover semelhante ao Botão 2 */
-  }
-  
-
-  /* Estilo para ocultar a bolinha do radio button e deixar ele com visual de botão */
-  input[type="radio"] {
-    display: none; /* Esconde a bolinha do radio */
+    margin-top: 40px;
 }
 
 .segment-box {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centraliza o conteúdo */
+    justify-content: center;
     background-color: #014A8E;
     color: white;
     font-size: 1.1rem;
@@ -203,14 +179,42 @@
     background-color: #D08040;
 }
 
-/* Estilo para quando o radio button está selecionado */
 input[type="radio"]:checked + .segment-box {
-    background-color: #D08040; /* Cor de fundo quando o item é selecionado */
+    background-color: #D08040; 
 }
 
 
+/* Botão "Próximo" */
+.rectangle-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
 
-/* Estilo para quando o menu for exibido no mobile */
+.btn{
+    background-color: #D08040 !important; 
+    color: white;
+    border: none;
+    padding: 10px 30px; 
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: opacity 0.3s ease; 
+  }
+  
+  .btn-primary:hover {
+    background-color: #D08040 !important;
+  }
+  
+  input[type="radio"] {
+    display: none; 
+}
+
+
+/*Configurações para o modo Mobile*/
+
+/* Menu Sidebar */
 @media (max-width: 767px) {
     .custom-sidebar {
         position: absolute;
@@ -243,9 +247,8 @@ input[type="radio"]:checked + .segment-box {
 
 }
 
-/* Botão do Menu Hamburger */
 .hamburger-btn {
-    display: none; /* Escondido no desktop */
+    display: none; 
     position: fixed;
     top: 15px;
     left: -100px !important;
@@ -257,17 +260,10 @@ input[type="radio"]:checked + .segment-box {
     padding-left: 5px;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1000; /* Sempre acima da sidebar */
+    z-index: 1000; 
 
 }
 
-.togglesidebar{
-  width: 900%;
-  background-color: transparent;
-  
-}
-
-/* Sidebar para mobile */
 .sidebar {
     position: relative;
     top: 0;
@@ -276,17 +272,24 @@ input[type="radio"]:checked + .segment-box {
     height: 100%;
     background-color: var(--AzulPrincipal);
     overflow-y: auto;
-    transition: left 0.3s ease; /* Transição suave para aparecer/desaparecer */
+    transition: left 0.3s ease; 
     z-index: 999;
 }
 
 
-/* Responsividade para exibir o botão */
+
+.togglesidebar{
+  width: 900%;
+  background-color: transparent;
+  
+}
+
+
 @media (max-width: 767px) {
     .hamburger-btn {
         display: block; 
         color: var(--AzulPrincipal);
-        background: none;/* Botão visível apenas no mobile */
+        background: none;
     }
 
     .sidebar {
@@ -299,60 +302,58 @@ input[type="radio"]:checked + .segment-box {
         top: 0;
     }
 
-        /* Sidebar visível (aberta) */
     .sidebar.open{
-        left: 0; /* Move para dentro da tela */
+        left: 0; 
     }
 }
 
-/* Responsividade para o main no mobile */
+/* Parte principal*/
 @media (max-width: 767px) {
     main {
-        padding: 20px; /* Reduz o padding no mobile */
-        margin-top: 60px; /* Distância do topo no mobile */
+        padding: 20px; 
+        margin-top: 60px; 
     }
 
-    /* Melhorando os títulos no mobile */
     .main-title {
-        font-size: 1.8rem; /* Tamanho do título no mobile */
-        margin-bottom: 20px; /* Distância maior entre o título e conteúdo */
-        text-align: center; /* Centraliza o título */
+        font-size: 1.8rem; 
+        margin-bottom: 20px; 
+        text-align: center; 
     }
 
     .subtitle {
-        font-size: 1rem; /* Tamanho reduzido no mobile */
+        font-size: 1rem; 
         color: var(--AzulSecundario);
-        margin-bottom: 30px; /* Aumenta a margem entre o subtítulo e conteúdo */
-        text-align: center; /* Centraliza o subtítulo */
+        margin-bottom: 30px; 
+        text-align: center;
     }
 
-    /* Segmentos */
     .segments {
         display: flex;
-        flex-direction: column; /* Organiza os segmentos em coluna no mobile */
-        align-items: center; /* Centraliza os itens */
-        gap: 20px; /* Espaço entre os segmentos */
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
         padding-left: 10%;
         padding-right: 10%;
     }
 
     .segment-column {
-        width: 100%; /* Segmentos ocupam toda a largura no mobile */
+        width: 100%; 
     }
 
-    /* Botões e caixas de segmento */
     .segment-box {
-        width: 100%; /* Faz os botões ocuparem toda a largura */
-        max-width: 300px; /* Limita o tamanho máximo */
-        margin: 10px 0; /* Distância entre os botões */
-        padding: 15px; /* Maior espaçamento interno */
-        font-size: 1.1rem; /* Tamanho da fonte ajustado */
-        text-align: center; /* Centraliza o texto no botão */
+        width: 100%; 
+        max-width: 300px; 
+        margin: 10px 0; 
+        padding: 15px; 
+        font-size: 1.1rem; 
+        text-align: center; 
     }
 
+
+/*Botão de "próximo*/
     .btn-primary {
-        width: 30%; /* Botões ocupam toda a largura no mobile */
+        width: 30%; 
         font-size: 12px;
-        padding: 8px 0; /* Maior altura para os botões */
+        padding: 8px 0; 
     }
 }

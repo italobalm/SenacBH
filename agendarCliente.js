@@ -1,4 +1,3 @@
-// Obtém todos os botões de rádio e o botão "Próximo"
 const radios = document.querySelectorAll('input[name="segmento"]');
 const nextButton = document.getElementById('next-button');
 
@@ -9,7 +8,8 @@ radios.forEach(radio => {
     });
 });
 
-    function toggleSidebar() {
+//Abrir e fechar o menu no modo mobile
+function toggleSidebar() {
         const sidebar = document.getElementById('sidebar-menu');
         sidebar.classList.toggle('open'); // Adiciona ou remove a classe "open"
     }
