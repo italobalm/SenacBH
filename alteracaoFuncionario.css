@@ -61,14 +61,14 @@
 }
 
 /* Estilo para o botão 'Próximo' */
-.btn[type="submit"] {
+.btn{
   background-color: #D08040; /* Laranja */
   color: white;
   border: none;
 }
 
 /* Estilo para o botão 'Voltar' */
-.btn[type="button"] {
+.btn-voltar[type="button"] {
   background-color: #D08040; /* Laranja */
   color: white;
   border: none;
@@ -110,7 +110,7 @@ button[type="button"] {
 }
 
 /* Estilo para o botão 'Voltar' */
-.btn[type="button"] {
+.btn-voltar[type="button"] {
     width: 30%;
     padding: 8px 0;
     font-size: 12px;
