@@ -13,47 +13,54 @@
 </head>
 <body>
     <div class="container-fluid">
-         <!-- Header -->
-         <header class="header d-flex justify-content-between align-items-center px-4">
-            <div class="logo-left">
-                <!-- Logo da Esquerda -->
-                <img src="img/logoPerfis.png" alt="Logo Left">
+        <header class="header d-flex justify-content-between align-items-center px-4">
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="logo-left d-none d-md-block">
+                <img src="img/logoPerfis.png" alt="Logo Left" class="logo1">
             </div>
-            
-            <div class="logo-right">
-                <!-- Logo da Direita -->
-                <img src="img/logo-senac.png" alt="Logo Right">
+            <div class="logo-right d-none d-md-block">
+                <img src="./img/logo-senac.png" alt="Logo Right" class="logo2">
             </div>
         </header>
+        
 
+        
         <div class="row no-gutters">
-            <nav class="sidebar col-md-3 col-lg-2 custom-sidebar">
-                <div class="text-center py-4">
-                    <!-- Foto de perfil -->
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img src="img/mulher2.png" alt="Foto de perfil" class="profile-pic me-2">
-                        <h6>Bem-vinda, Roberta!</h6>
-                    </div>
-                </div>
-                <p>PRINCIPAL</p>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" id="marked" href="calendarioFuncionario.html"><i class="fas fa-calendar-alt me-2"></i>Calendário</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="clientesFuncionario.html"><i class="fas fa-user me-2"></i>Clientes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#"><i class="fas fa-question-circle me-2"></i>Ajuda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="configFuncionario.html"><i class="fas fa-cog me-2"></i>Configurações</a>
-                    </li>
-                </ul>
-                <div class="text-center mt-auto py-3">
-                    <a href="index.html" class="text-white"><i class="fas fa-power-off"></i> Sair</a>
-                </div>
-            </nav>
+          <!-- Botão do Menu Hamburger -->
+<button class="hamburger-btn" onclick="toggleSidebar()">☰</button>
+
+<!-- Sidebar -->
+<nav class="sidebar custom-sidebar" id="sidebar-menu">
+    <div class="text-center py-4">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="img/mulher2.png" alt="Foto de perfil" class="profile-pic me-2">
+            <h6>Bem-vinda, Roberta!</h6>
+        </div>
+    </div>
+    <h6>ID: 00000</h6>
+    <p>PRINCIPAL</p>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link text-white"  href="calendarioFuncionario.html"><i class="fas fa-calendar-alt me-2"></i>Agendamentos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" id="marked" href="clientesFuncionario.html"><i class="fas fa-calendar-check me-2"></i>Clientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="ajudaFuncionario.html"><i class="fas fa-comments me-2"></i>Ajuda</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="configFuncionario.html"><i class="fas fa-cog me-2"></i>Configurações</a>
+        </li>
+        <br>
+        <li class="text-center mt-auto py-2">
+            <a href="index.html" class="text-white"><i class="fas fa-power-off"></i> Sair</a>
+        </li>
+    </ul>
+</nav>
+
 
             <!-- Main Content -->
             <main class="col-md-9 col-lg-10 p-4">
