@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="clientesAdm.css">
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="header d-flex justify-content-between align-items-center px-4">
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="logo-left d-none d-md-block">
+                <img src="img/logoPerfis.png" alt="Logo Left" class="logo1">
+            </div>
+            <div class="logo-right d-none d-md-block">
+                <img src="./img/logo-senac.png" alt="Logo Right" class="logo2">
+            </div>
+        </header>
+        
+
+        
+        <div class="row no-gutters">
+          <!-- Botão do Menu Hamburger -->
+<button class="hamburger-btn" onclick="toggleSidebar()">☰</button>
+
+<!-- Sidebar -->
+<nav class="sidebar custom-sidebar" id="sidebar-menu">
+    <div class="text-center py-4">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="img/mulher1.png" alt="Foto de perfil" class="profile-pic me-2">
+            <h6>Bem-vinda, Maria!</h6>
+        </div>
+    </div>
+    <h6>ID: 00000</h6>
+    <p>PRINCIPAL</p>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link text-white"  href="calendario.html"><i class="fas fa-calendar-alt me-2"></i>Agendamentos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="clientesAdm.html"><i class="fas fa-calendar-check me-2"></i>Clientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" id="marked" href="feedbackAdm.html"><i class="fas fa-comments me-2"></i>Feedbacks</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="configAdm.html"><i class="fas fa-cog me-2"></i>Configurações</a>
+        </li>
+        <br>
+        <li class="text-center mt-auto py-2">
+            <a href="index.html" class="text-white"><i class="fas fa-power-off"></i> Sair</a>
+        </li>
+    </ul>
+</nav>
+
+            <!-- Main Content -->
+            <main class="col-md-9 col-lg-10 p-4">
+                <h3 class="main-title">Feedbacks</h3>
+                <h5 class="subtitle">Avaliações dos clientes</h5>
+
+                <section id="feedback-section">
+                    <div class="feedback-container">
+                        <!-- Feedback Item -->
+                        <div class="feedback-item">
+                            <img src="img/mulher3.png" alt="Foto do Cliente" class="feedback-img">
+                            <h3 class="feedback-name">Júlia Albuquerque</h3>
+                            <div class="feedback-rating">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Alterar estrelas conforme a nota -->
+                            </div>
+                            <p class="feedback-comment">Adorei meu último atendimento!</p>
+                        </div>
+
+                    
+                    
+                    </div>
+                </section>
+
+                <section id="feedback-section">
+                    <div class="feedback-container">
+                        <!-- Feedback Item -->
+                        <div class="feedback-item">
+                            <img src="img/mulher6.jpg" alt="Foto do Cliente" class="feedback-img">
+                            <h3 class="feedback-name">Marta Soares</h3>
+                            <div class="feedback-rating">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span> <!-- Alterar estrelas conforme a nota -->
+                            </div>
+                            <p class="feedback-comment">Estou encantada com o Salão!</p>
+                        </div>
+
+                    
+                    
+                    </div>
+                </section>
+                <section id="feedback-section">
+                    <div class="feedback-container">
+                        <!-- Feedback Item -->
+                        <div class="feedback-item">
+                            <img src="img/homem1.jpg" alt="Foto do Cliente" class="feedback-img">
+                            <h3 class="feedback-name">Jorge Santos</h3>
+                            <div class="feedback-rating">
+                                <span>&#9733;&#9734;&#9734;&#9734;&#9734;</span> <!-- Alterar estrelas conforme a nota -->
+                            </div>
+                            <p class="feedback-comment">Não curti o atraso do profissional que iria me atender.</p>
+                        </div>
+
+                    
+                    
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="agendarCliente.js"></script>
+</body>
+</html>
