@@ -1,5 +1,184 @@
 
-/* Estilo para o Header */
+/* Main Content */
+.main-content {
+    background-color: transparent !important;
+    border-radius: 8px;
+    padding-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo para o Título e Subtítulo */
+.title {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+}
+
+.subtitle {
+    text-align: left;
+    color: #014A8E !important;
+    font-size: 26px;
+    margin-bottom: 40px; /* Aumentado para afastar mais os segmentos */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+/* Blocos de Agendamento */
+.agenda-block {
+    background-color: #003366;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Aumenta o espaçamento entre os serviços */
+}
+
+.agenda-block .row > div {
+    margin-bottom: 10px;
+}
+
+.agenda-block a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.agenda-block a:hover {
+    text-decoration: underline;
+}
+
+/* Botão Voltar */
+.btn-voltar {
+    background-color: #d3a374;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-voltar:hover {
+    background-color: #bf8d5e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Faz com que os itens do header fiquem em coluna */
+        align-items: center; /* Centraliza os itens */
+        text-align: center;
+    }
+
+    .header-photo img {
+        max-height: 60px; /* Reduz o tamanho da foto no header em telas menores */
+    }
+
+    .agenda-block {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Main Content */
+.main-content {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding-bottom: 20px; /* Espaçamento inferior */
+}
+
+
+/* Blocos de Agendamento */
+.agenda-block {
+    background-color: #003366;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Aumenta o espaçamento entre os serviços */
+}
+
+.agenda-block .row > div {
+    margin-bottom: 10px;
+}
+
+.agenda-block a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.agenda-block a:hover {
+    text-decoration: underline;
+}
+
+/* Botão Voltar */
+.btn-voltar {
+    background-color: #d3a374;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-voltar:hover {
+    background-color: #bf8d5e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Faz com que os itens do header fiquem em coluna */
+        align-items: center; /* Centraliza os itens */
+        text-align: center;
+    }
+
+    .header-photo img {
+        max-height: 60px; /* Reduz o tamanho da foto no header em telas menores */
+    }
+
+    .agenda-block {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .titles {
+        margin-bottom: 20px; /* Reduz o espaçamento abaixo dos títulos em telas menores */
+    }
+
+    .title {
+        font-size: 28px; /* Ajusta o tamanho da fonte do título */
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 18px;
+        color: #014A8E !important;
+    }
+    
+
+}
+
+@media (max-width: 768px) { /* Ajuste o valor conforme necessário */
+    .logo-left,
+    .logo-right {
+        display: none;
+    }
+}
+
+:root {
+    --laranja-senac:#D08040;
+    --branco:white;
+    --AzulPrincipal:#014A8E;
+    --preto:#000000;
+    --AzulSecundario:#1C6DB9;
+    --brano-cinza:#E0E0E0;
+  }
+  
+
 .header {
     background-color: #fff;
     border-bottom: 2px solid #ddd;
@@ -12,218 +191,63 @@
   .header img {
     max-height: 60px;
   }
-  
 
-.header-photo img {
-    width: 100%; /* Faz a imagem ocupar toda a largura do container */
-    object-fit: cover; /* Ajusta a imagem para cobrir o container */
-    border-radius: 5px; /* Opcional: adiciona cantos arredondados à foto */
-}
-
-/* Main Content */
-.main-content {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding-bottom: 20px; /* Espaçamento inferior */
-}
-
-/* Títulos */
-.titles {
-    text-align: left;
-    margin-bottom: 30px; /* Aumenta o espaçamento abaixo dos títulos */
-}
-
-.title {
-    margin-bottom: 15px; /* Aumenta o espaçamento entre o título e o subtítulo */
-    font-size: 34px;
-}
-
-.subtitle {
-    text-align: left;
-    color: var(--AzulPrincipal); /* Azul claro */
-    opacity: 60%;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-/* Blocos de Agendamento */
-.agenda-block {
-    background-color: #003366;
-    color: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px; /* Aumenta o espaçamento entre os serviços */
-}
-
-.agenda-block .row > div {
-    margin-bottom: 10px;
-}
-
-.agenda-block a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.agenda-block a:hover {
-    text-decoration: underline;
-}
-
-/* Botão Voltar */
-.btn-voltar {
-    background-color: #d3a374;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.btn-voltar:hover {
-    background-color: #bf8d5e;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Faz com que os itens do header fiquem em coluna */
-        align-items: center; /* Centraliza os itens */
-        text-align: center;
-    }
-
-    .header-photo img {
-        max-height: 60px; /* Reduz o tamanho da foto no header em telas menores */
-    }
-
-    .agenda-block {
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-
-    .titles {
-        margin-bottom: 20px; /* Reduz o espaçamento abaixo dos títulos em telas menores */
-    }
-
-    .title {
-        font-size: 20px; /* Ajusta o tamanho da fonte do título */
-    }
-
-    .subtitle {
-        font-size: 16px; /* Ajusta o tamanho da fonte do subtítulo */
-    }
-}
-
-/* Header */
-.header {
+  .header {
     background-color: #fff;
     border-bottom: 2px solid #ddd;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    padding: 10px 0;
+    background-image: url('img/fundo-header.png');
+    background-size: 1200px;
+    height: 130px;
+  }
+  
+  .header img {
+    max-height: 60px;
+  }
+
+  .button-container {
+    display: flex; /* Alinha os botões na mesma linha */
+    justify-content: center; /* Centraliza os botões */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 20px; /* Ajuste da margem superior */
 }
 
-.header img {
-    max-height: 80px; /* Ajusta o tamanho das logos */
+/* Adicionando margem entre os botões */
+.btn-voltar{
+    margin-left: 10px; /* Margem entre os botões */
 }
 
-.header-photo img {
-    width: 100%; /* Faz a imagem ocupar toda a largura do container */
-    object-fit: cover; /* Ajusta a imagem para cobrir o container */
-    border-radius: 5px; /* Opcional: adiciona cantos arredondados à foto */
+.btn-proximo{
+    margin-right: 10px; /* Margem entre os botões */
 }
 
-/* Main Content */
-.main-content {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding-bottom: 20px; /* Espaçamento inferior */
-}
-
-/* Títulos */
-.titles {
-    text-align: left;
-    margin-bottom: 30px; /* Aumenta o espaçamento abaixo dos títulos */
-}
-
-.title {
-    margin-bottom: 15px; /* Aumenta o espaçamento entre o título e o subtítulo */
-    font-size: 24px;
-}
-
-.subtitle {
-    font-size: 18px;
-}
-
-/* Blocos de Agendamento */
-.agenda-block {
-    background-color: #003366;
-    color: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px; /* Aumenta o espaçamento entre os serviços */
-}
-
-.agenda-block .row > div {
-    margin-bottom: 10px;
-}
-
-.agenda-block a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.agenda-block a:hover {
-    text-decoration: underline;
-}
-
-/* Botão Voltar */
-.btn-voltar {
-    background-color: #d3a374;
+/* Estilo para o botão 'Próximo' */
+.btn-proximo {
+    background-color: #D08040; /* Laranja */
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
+}
+
+/* Estilo para o botão 'Voltar' */
+.btn-voltar{
+    background-color: #D08040; /* Laranja */
+    color: white;
+    border: none;
+}
+
+/* Estilo para os botões */
+.btn-voltar{
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 25px; /* Bordas arredondadas */
     cursor: pointer;
+    transition: opacity 0.3s ease;
 }
 
-.btn-voltar:hover {
-    background-color: #bf8d5e;
+.btn-proximo{
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Faz com que os itens do header fiquem em coluna */
-        align-items: center; /* Centraliza os itens */
-        text-align: center;
-    }
-
-    .header-photo img {
-        max-height: 60px; /* Reduz o tamanho da foto no header em telas menores */
-    }
-
-    .agenda-block {
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-
-    .titles {
-        margin-bottom: 20px; /* Reduz o espaçamento abaixo dos títulos em telas menores */
-    }
-
-    .title {
-        font-size: 20px; /* Ajusta o tamanho da fonte do título */
-    }
-
-    .subtitle {
-        font-size: 16px; /* Ajusta o tamanho da fonte do subtítulo */
-    }
-}
-

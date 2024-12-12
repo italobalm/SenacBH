@@ -7,15 +7,6 @@
     --brano-cinza:#E0E0E0;
   }
   
-
-.header {
-    background-color: #fff;
-    border-bottom: 2px solid #ddd;
-    padding: 10px 0;
-    background-image: url('img/fundo-header.png');
-    background-size: 1200px;
-    height: 130px;
-  }
   
   .header img {
     max-height: 60px;
