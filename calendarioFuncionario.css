@@ -299,3 +299,20 @@ background-color: transparent;
   }
 }
 
+.calendar-desktop {
+  display: block;
+}
+
+.calendar-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .calendar-desktop {
+      display: none;
+  }
+
+  .calendar-mobile {
+      display: block;
+  }
+}
